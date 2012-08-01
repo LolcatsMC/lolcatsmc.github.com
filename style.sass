@@ -1,0 +1,71 @@
+@import 'sass/reset'
+@import 'sass/classes'
+@import 'sass/mixins'
+
+body
+    color: white
+    font-family: sans-serif
+    background: url('img/lightbg.png')
+    a:link, a:visited, a:active, a:hover
+        color: white
+        text-decoration: none
+        border-bottom: 1px solid grey
+
+h1
+    font: 2.5em Advent Pro, sans-serif
+    text-transform: uppercase
+    text-align: center
+    text-shadow: 0 2px 3px grey
+    &:first-letter
+        font-size: 1.2em
+
+p
+    font-size: 1.2em
+    text-align: center
+    text-shadow: 0 1px 2px grey
+    margin: 15px 0
+
+body > header
+    background: url('img/bluebg.png')
+    h1
+        font-size: 3em
+
+body > section
+    h1
+        margin-bottom: 20px
+
+section.whoaretheseponies
+    padding: 30px
+    text-align: center
+    div
+        display: inline-block
+        width: 260px
+        position: relative
+        p
+            display: block
+            opacity: 0
+            padding: 10px
+            background: rgba(80,80,80,0.9)
+            position: absolute
+            top: 5px
+            left: 5px
+            font-size: 1em
+            width: 230px
+            +transition(.3s opacity)
+            q
+                display: block
+                font-size: 1.5em
+                border-bottom: 1px solid grey
+                margin-bottom: 5px
+                &:first-letter
+                    font-size: 1.1em
+
+        &:hover
+            p
+                opacity: 1
+
+div#lolcat-float
+    z-index: 99999
+    position: fixed
+    bottom: -3px
+    right: 1px

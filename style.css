@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.light {
+  background: url("img/lightbg.png"); }
+
+.dark {
+  background: url("img/darkbg.png"); }
+
+.blue {
+  background: url("img/bluebg.png"); }
+
+.orange {
+  background: url("img/orangebg.png"); }
+
+.purple {
+  background: url("img/purplebg.png"); }
+
+.imgpad {
+  padding: 5px; }
+
+.pad {
+  padding: 30px; }
+
+body {
+  color: white;
+  font-family: sans-serif;
+  background: url("img/lightbg.png"); }
+  body a:link, body a:visited, body a:active, body a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid grey; }
+
+h1 {
+  font: 2.5em Advent Pro, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 2px 3px grey; }
+  h1:first-letter {
+    font-size: 1.2em; }
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 0 1px 2px grey;
+  margin: 15px 0; }
+
+body > header {
+  background: url("img/bluebg.png"); }
+  body > header h1 {
+    font-size: 3em; }
+
+body > section h1 {
+  margin-bottom: 20px; }
+
+section.whoaretheseponies {
+  padding: 30px;
+  text-align: center; }
+  section.whoaretheseponies div {
+    display: inline-block;
+    width: 260px;
+    position: relative; }
+    section.whoaretheseponies div p {
+      display: block;
+      opacity: 0;
+      padding: 10px;
+      background: rgba(80, 80, 80, 0.9);
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 1em;
+      width: 230px;
+      -moz-transition: 0.3s opacity;
+      -webkit-transition: 0.3s opacity;
+      -o-transition: 0.3s opacity;
+      transition: 0.3s opacity; }
+      section.whoaretheseponies div p q {
+        display: block;
+        font-size: 1.5em;
+        border-bottom: 1px solid grey;
+        margin-bottom: 5px; }
+        section.whoaretheseponies div p q:first-letter {
+          font-size: 1.1em; }
+    section.whoaretheseponies div:hover p {
+      opacity: 1; }
+
+div#lolcat-float {
+  z-index: 99999;
+  position: fixed;
+  bottom: -3px;
+  right: 1px; }
